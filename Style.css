@@ -1,0 +1,20 @@
+body {
+    
+    background-color: rgb(187, 220, 230);
+}
+
+
+.bar1 { fill: aqua; }
+.bar2 { fill: deepskyblue; }
+.bar3 { fill: steelblue; }
+.bar:hover {fill: orange; }
+.axis--x path { display: none; }
+.line {
+    fill: none;
+    stroke: royalblue;
+    stroke-width: 3;
+}
+.dot {
+    fill: royalblue;
+    stroke: royalblue;
+}
