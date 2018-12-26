@@ -13,7 +13,7 @@ var dataset = [
   
   ];
 
-  var margin = {top: 20, right: 20, bottom: 30, left: 220},
+  var margin = {top: 20, right: 20, bottom: 30, left: 230},
       width = 750,
       height = 350
       ;
