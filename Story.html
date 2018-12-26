@@ -1,26 +1,131 @@
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Transportation in Saudi Arabia</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-   <script src="js/script.js"></script>
-   <script src="https://d3js.org/d3.v4.min.js"></script>
-   <link rel="stylesheet" type="text/css" href="Style.css">
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Transportation in Saudi Arabia </title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,800i,900" rel="stylesheet">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/meanmenu.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/responsive.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
+	<link href="/path/to/c3.css" rel="stylesheet">
+    <script src="/path/to/d3.v5.min.js" charset="utf-8"></script>
+    <script src="/path/to/c3.min.js"></script>
+   
 </head>
 <body>
-        
-<header>
-    Transportation in Saudi Arabia
-</header>
 
-<div class="fluid-container">
- <script src="Pop-Co2Chart.js" ></script>
-</div>
-<div>
-        <p><Center>Source: <a href="https://datasource.kapsarc.org/explore/?disjunctive.theme&disjunctive.country&disjunctive.iso-region&disjunctive.keyword&disjunctive.publisher&sort=modified"> KAPSARC Energy Data Portal </a></Center></p>
-</div>
+	<div class="hero-wrapper text-center ">
+		<img src="Transportation.png" hight="1000" />
+	</div>
+	
+
+
+	<div class="demo-area">
+		<div class="container ptb-100">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                    <h2> Population </h2>
+
+                        <iframe class="background" src="https://datasource.kapsarc.org/explore/embed/dataset/world-population/analyze/?q=sau&dataChart=eyJxdWVyaWVzIjpbeyJjaGFydHMiOlt7InR5cGUiOiJsaW5lIiwiZnVuYyI6IkFWRyIsInNjaWVudGlmaWNEaXNwbGF5Ijp0cnVlLCJjb2xvciI6InJhbmdlLVBpWUciLCJ5QXhpcyI6InZhbHVlIn1dLCJ4QXhpcyI6InllYXIiLCJtYXhwb2ludHMiOjUwLCJzb3J0IjoiIiwiY29uZmlnIjp7ImRhdGFzZXQiOiJ3b3JsZC1wb3B1bGF0aW9uIiwib3B0aW9ucyI6eyJxIjoic2F1In19LCJzZXJpZXNCcmVha2Rvd24iOiJjb3VudHJ5X25hbWUifV0sInRpbWVzY2FsZSI6IiIsImRpc3BsYXlMZWdlbmQiOnRydWUsImFsaWduTW9udGgiOnRydWV9&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
+                </div>
+            </div>
+		</div>
+		
+        <div class="container ptb-100">
+            <div class="row text-center" >
+
+				<h2>Emissions History</h2>
+			</br>
+		    </br>
+
+				<div class="col-md-12 col-sm-12 col-xs-12">
+						
+					    <h3> Co2 Emissions (MtCo2) </h3>  
+						 <script src="Co2Chart.js"></script>	
+				</div>
+				
+            </div>
+         </div>
+		</div>
+	
+		<div class="col-md-12 col-sm-12 col-xs-12 text-center">
+		</br>
+		</br>
+	    </br>
+				<h3> Greenhouse Gas Emissions (Mt Co2eq/Capita) </h3>  
+				<iframe src="https://datasource.kapsarc.org/explore/embed/dataset/ghg-and-co2-emissions-2014/analyze/?disjunctive.country&disjunctive.indicator&q=Saudi%20Arabia&refine.indicator=GHG%20per%20capita%20Emissions&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6ImdoZy1hbmQtY28yLWVtaXNzaW9ucy0yMDE0Iiwib3B0aW9ucyI6eyJkaXNqdW5jdGl2ZS5jb3VudHJ5Ijp0cnVlLCJkaXNqdW5jdGl2ZS5pbmRpY2F0b3IiOnRydWUsInEiOiJTYXVkaSBBcmFiaWEiLCJyZWZpbmUuaW5kaWNhdG9yIjoiR0hHIHBlciBjYXBpdGEgRW1pc3Npb25zIn19LCJjaGFydHMiOlt7ImFsaWduTW9udGgiOnRydWUsInR5cGUiOiJsaW5lIiwiZnVuYyI6IkFWRyIsInlBeGlzIjoib2JzX3ZhbHVlIiwic2NpZW50aWZpY0Rpc3BsYXkiOnRydWUsImNvbG9yIjoiIzY2YzJhNSJ9XSwieEF4aXMiOiJ0aW1lX3BlcmlvZCIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6InllYXIiLCJzb3J0IjoiIn1dLCJkaXNwbGF5TGVnZW5kIjp0cnVlLCJhbGlnbk1vbnRoIjp0cnVlfQ%3D%3D&static=false&datasetcard=false" width="800" height="600" frameborder="0"></iframe>
+		</div>
+            
+	
+        <div class="container ptb-100">
+
+            <div class="row" >
+
+              <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+
+                <p> Source: <a href="https://datasource.kapsarc.org/explore/dataset/world-co2-emissions-energy-sector-1971-2012/table/?disjunctive.country&refine.country=Saudi+Arabia">KAPSARC Data Portal: World CO2 Emissions Energy Sector </a> </br>
+						   <a href="https://datasource.kapsarc.org/explore/dataset/carbon-dioxide-emissions/table/?disjunctive.million_tonnes_carbon_dioxide&refine.million_tonnes_carbon_dioxide=Saudi+Arabia&sort=year"> KAPSARC Data Portal: Carbon Dioxide Emissions</a> </br>
+				           <a href="https://datasource.kapsarc.org/explore/dataset/ghg-and-co2-emissions-2014/analyze/?disjunctive.country&disjunctive.indicator&q=Saudi+Arabia&refine.indicator=GHG+per+capita+Emissions&dataChart=eyJxdWVyaWVzIjpbeyJjb25maWciOnsiZGF0YXNldCI6ImdoZy1hbmQtY28yLWVtaXNzaW9ucy0yMDE0Iiwib3B0aW9ucyI6eyJkaXNqdW5jdGl2ZS5jb3VudHJ5Ijp0cnVlLCJkaXNqdW5jdGl2ZS5pbmRpY2F0b3IiOnRydWUsInEiOiJTYXVkaSBBcmFiaWEiLCJyZWZpbmUuaW5kaWNhdG9yIjoiR0hHIHBlciBjYXBpdGEgRW1pc3Npb25zIn19LCJjaGFydHMiOlt7ImFsaWduTW9udGgiOnRydWUsInR5cGUiOiJsaW5lIiwiZnVuYyI6IkFWRyIsInlBeGlzIjoib2JzX3ZhbHVlIiwic2NpZW50aWZpY0Rpc3BsYXkiOnRydWUsImNvbG9yIjoiIzY2YzJhNSJ9XSwieEF4aXMiOiJ0aW1lX3BlcmlvZCIsIm1heHBvaW50cyI6IiIsInRpbWVzY2FsZSI6InllYXIiLCJzb3J0IjoiIn1dLCJkaXNwbGF5TGVnZW5kIjp0cnVlLCJhbGlnbk1vbnRoIjp0cnVlfQ%3D%3D">KAPSARC Data Portal: GHG and CO2 Emissions</a>
+						</p>
+			  </div> 
+			  
+			</div>
+
+		</div>
+	
+		<div class="row">
+			<div class="col-md12 col-sm-12 col-xs-12 text-center">
+
+					<script id="infogram_0_c8698f49-3963-4a57-bea8-7f79716cb76d" title="" src="https://e.infogram.com/js/dist/embed.js?mvF" type="text/javascript"></script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+
+			</div>
+		</div>
+
+		<div class="row">
+				<div class="col-md12 col-sm-12 col-xs-12 text-center">
+		<p> Sources: <a href="https://www.saso.gov.sa/ar/standards/Documents/مشروع%20اللائحة%20الفنية%20السعودية%20الخاصة%20بمعيار%20الوقود%20انجليزي%20بعد%20المراجعة.pdf"> SASO Report </a> </br>
+			<a href="https://www.theicct.org/sites/default/files/KSA_AlRoge_Enhancing%20Vehicles%20Energy%20Efficiency%20in%20Saudi%20Arabia.pdf"> Saudi Energy Efficiency Center Report </a>
+		</p>
+		</div>
+	</div>
+	
+
+	<!-- Feature Section
+	============================================ -->
+	<div id="feature" class="feature-area bg-off-white padding-90 fix">
+		
+	</div>
+
+	<!-- Footer Top Area
+	============================================ -->
+	<div class="footer-top">
+	
+	</div>
+	
+
+<!-- JS -->
+
+<!-- jQuery JS
+============================================ -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap JS
+============================================ -->
+<script src="js/bootstrap.min.js"></script>
+<!-- jquery.scrollup.min.js
+============================================ -->
+<script src="js/jquery.scrollup.min.js"></script>
+<!-- Main JS
+============================================ -->
+<script src="js/main.js"></script>
+
 </body>
 </html>
